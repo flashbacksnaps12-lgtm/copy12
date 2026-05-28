@@ -29,23 +29,23 @@ export default function TourPackagesSection() {
   const packages = activeTab === 'indian' ? indianPackages : spiritualPackages;
 
   return (
-    <section id="packages" className="py-16 md:py-24 bg-[#FFF8F0] border-b-2 border-[#1A1A1A]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="packages" className="py-8 md:py-16 lg:py-24 bg-[#FFF8F0] border-b-2 border-[#1A1A1A]">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Section Header */}
-        <div className="text-center space-y-6 mb-12 max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A]">
+        <div className="text-center space-y-3 md:space-y-6 mb-8 md:mb-12 max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1A1A1A] text-balance">
             Rajdani Tour Packages
           </h2>
-          <p className="text-lg text-[#666666] leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-[#666666] leading-relaxed">
             Embark on an unforgettable journey with Rajdani Travels&apos; thoughtfully crafted tour packages. From serene weekend escapes to immersive cultural holidays and thrilling road adventures, our curated collection of tours invites you to discover the world beyond the ordinary. At Rajdani Travels, we blend comfort, adventure, and local insight to bring you travel experiences that leave lasting memories.
           </p>
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-4 mb-12 justify-center">
+        <div className="flex flex-col sm:flex-row gap-2 md:gap-4 mb-8 md:mb-12 justify-center">
           <button
             onClick={() => setActiveTab('indian')}
-            className={`px-6 py-3 font-bold rounded-full border-2 border-[#1A1A1A] transition ${
+            className={`px-4 md:px-6 py-2 md:py-3 font-bold rounded-full border-2 border-[#1A1A1A] transition text-sm md:text-base ${
               activeTab === 'indian'
                 ? 'bg-[#FBBF24] text-[#1A1A1A]'
                 : 'bg-white text-[#1A1A1A] hover:bg-[#FBBF24]'
@@ -55,7 +55,7 @@ export default function TourPackagesSection() {
           </button>
           <button
             onClick={() => setActiveTab('spiritual')}
-            className={`px-6 py-3 font-bold rounded-full border-2 border-[#1A1A1A] transition ${
+            className={`px-4 md:px-6 py-2 md:py-3 font-bold rounded-full border-2 border-[#1A1A1A] transition text-sm md:text-base ${
               activeTab === 'spiritual'
                 ? 'bg-[#FBBF24] text-[#1A1A1A]'
                 : 'bg-white text-[#1A1A1A] hover:bg-[#FBBF24]'
@@ -66,23 +66,23 @@ export default function TourPackagesSection() {
         </div>
 
         {/* Package Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {packages.map((pkg) => (
             <div
               key={pkg.id}
               className="bg-white rounded-lg border-2 border-[#1A1A1A] overflow-hidden hover:shadow-xl hover:scale-105 transition-all"
             >
               {/* Image Placeholder */}
-              <div className="w-full h-48 bg-gradient-to-br from-[#FBBF24] to-[#F59E0B] flex items-center justify-center border-b-2 border-[#1A1A1A]">
-                <span className="text-5xl">{pkg.emoji}</span>
+              <div className="w-full h-40 sm:h-48 bg-gradient-to-br from-[#FBBF24] to-[#F59E0B] flex items-center justify-center border-b-2 border-[#1A1A1A]">
+                <span className="text-4xl md:text-5xl">{pkg.emoji}</span>
               </div>
 
               {/* Content */}
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-[#1A1A1A]">{pkg.name}</h3>
-                <p className="text-sm text-[#666666]">Contact For More Details</p>
+              <div className="p-4 md:p-6 space-y-3 md:space-y-4">
+                <h3 className="text-lg md:text-xl font-bold text-[#1A1A1A] text-balance">{pkg.name}</h3>
+                <p className="text-xs sm:text-sm text-[#666666]">Contact For More Details</p>
                 
-                <button className="w-full px-6 py-2 bg-[#FBBF24] text-[#1A1A1A] font-bold rounded-full border-2 border-[#1A1A1A] hover:bg-[#F59E0B] transition">
+                <button className="w-full px-4 md:px-6 py-2 bg-[#FBBF24] text-[#1A1A1A] font-bold rounded-full border-2 border-[#1A1A1A] hover:bg-[#F59E0B] transition text-sm md:text-base">
                   Explore More
                 </button>
               </div>
