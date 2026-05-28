@@ -134,24 +134,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-@keyframes scroll-loop {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.scroll-loop {
-  display: flex !important;
-  animation: scroll-loop 15s linear infinite !important;
-  flex-wrap: nowrap !important;
-}
-
-.scroll-loop-container {
-  overflow: hidden !important;
-  white-space: nowrap !important;
-  width: 100% !important;
-}
