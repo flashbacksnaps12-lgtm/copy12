@@ -31,38 +31,38 @@ const trendingPackages = [
 
 export default function TrendingPackagesSection() {
   return (
-    <section className="py-16 md:py-24 bg-white border-b-2 border-[#1A1A1A]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-8 md:py-16 lg:py-24 bg-white border-b-2 border-[#1A1A1A]">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Section Header */}
-        <div className="text-center space-y-6 mb-12 max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A]">
+        <div className="text-center space-y-3 md:space-y-6 mb-8 md:mb-12 max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1A1A1A] text-balance">
             Trending Tour Packages
           </h2>
-          <p className="text-lg text-[#1A1A1A] leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#1A1A1A] leading-relaxed">
             At <strong>Rajdani Travels</strong>, We Believe That Travel Is More Than Just Ticking Off Destinations—It&apos;s About Creating Unforgettable Experiences, Exploring New Cultures, And Discovering The Beauty Our World Has To Offer. Whether You&apos;re Dreaming Of Snow-Capped Mountains, Golden Deserts, Sacred Shrines, Or Vibrant Cities, <strong>We&apos;re Here To Make Your Journey Seamless, Affordable, And Truly Special.</strong>
           </p>
         </div>
 
         {/* Package Cards - 4 in one row on desktop, 1 per row on mobile */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {trendingPackages.map((pkg) => (
             <div
               key={pkg.id}
-              className="bg-white flex flex-col text-center p-6"
+              className="bg-white flex flex-col text-center p-4 md:p-6 border border-gray-200 rounded"
             >
               {/* Image Placeholder */}
-              <div className="w-full h-40 bg-gray-200 flex items-center justify-center mb-4 -mx-6 -mt-6">
-                <span className="text-5xl text-gray-400">□</span>
+              <div className="w-full h-32 md:h-40 bg-gray-200 flex items-center justify-center mb-3 md:mb-4 -mx-4 md:-mx-6 -mt-4 md:-mt-6 rounded-t">
+                <span className="text-4xl md:text-5xl text-gray-400">□</span>
               </div>
 
               {/* Card Title */}
-              <h3 className="text-base font-bold text-[#1A1A1A] mb-2">{pkg.name}</h3>
+              <h3 className="text-sm md:text-base font-bold text-[#1A1A1A] mb-2 text-balance">{pkg.name}</h3>
 
               {/* Duration */}
-              <p className="text-xs font-bold text-[#1A1A1A] mb-3">{pkg.duration}</p>
+              <p className="text-xs font-bold text-[#1A1A1A] mb-2 md:mb-3">{pkg.duration}</p>
 
               {/* Itinerary Line */}
-              <p className="text-11px text-[#666666] mb-3 leading-snug">
+              <p className="text-xs text-[#666666] mb-2 md:mb-3 leading-snug">
                 Itinerary: {pkg.highlights.map((h) => {
                   if (h === 'Yamunotri') return '📍 Yamunotri';
                   if (h === 'Gangotri') return '→ Gangotri';
@@ -79,7 +79,7 @@ export default function TrendingPackagesSection() {
               </p>
 
               {/* Includes */}
-              <p className="text-11px text-[#666666] mb-3 leading-snug">
+              <p className="text-xs text-[#666666] mb-2 md:mb-3 leading-snug">
                 {pkg.includes.map((item, idx) => {
                   const icon = 
                     item === 'Cab Transfers' ? '🚗' :
@@ -93,7 +93,7 @@ export default function TrendingPackagesSection() {
               </p>
 
               {/* Footer Text */}
-              <p className="text-11px text-[#666666] mb-4">
+              <p className="text-xs text-[#666666] mb-3 md:mb-4">
                 {pkg.name.includes('Char') && 'Your Divine Yatra Partner.'}
                 {pkg.name.includes('Amarnath') && 'Your Divine Yatra Partner – Rajdani Travels.'}
                 {pkg.name.includes('Vaishno') && 'Your Divine Yatra Partner – Rajdani Travels.'}
@@ -101,7 +101,7 @@ export default function TrendingPackagesSection() {
               </p>
 
               {/* Book Now Button */}
-              <button className="w-full px-6 py-2 bg-[#FBBF24] text-[#1A1A1A] font-bold rounded-sm border-2 border-[#1A1A1A] hover:bg-[#F59E0B] transition mt-auto">
+              <button className="w-full px-4 md:px-6 py-2 bg-[#FBBF24] text-[#1A1A1A] font-bold rounded-sm border-2 border-[#1A1A1A] hover:bg-[#F59E0B] transition mt-auto text-xs md:text-sm">
                 Book Now
               </button>
             </div>
