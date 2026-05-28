@@ -42,7 +42,7 @@ export default function TransportSection() {
               <div>
                 <h4 className="text-base md:text-lg font-bold text-[#1A1A1A] mb-2">Need A Cab?</h4>
                 <p className="text-[#1A1A1A] text-xs sm:text-sm md:text-base leading-relaxed">
-                  Call Or WhatsApp Us At <strong className="break-all">+91 91499 02323, +91 91495 11328, +91 97967 55550</strong> To Book Your Ride Instantly.
+                  Call Or WhatsApp Us At <strong className="break-all">+91- 91495 11328, +91 97967 55550</strong> To Book Your Ride Instantly.
                 </p>
               </div>
 

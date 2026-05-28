@@ -35,18 +35,13 @@ export default function Footer() {
                 <p>Hiranagar Jammu And Kashmir</p>
                 <p>184142</p>
                 <p>
-                  <a href="tel:+919149902323" className="hover:text-[#FBBF24] transition-colors break-all">
-                    +91 91499 02323
-                  </a>
-                </p>
-                <p>
                   <a href="tel:+919149511328" className="hover:text-[#FBBF24] transition-colors break-all">
                     +91 91495 11328
                   </a>
                 </p>
                 <p>
                   <a href="tel:+919796755550" className="hover:text-[#FBBF24] transition-colors break-all">
-                    +91 97967 55550
+                    +91 9796755550
                   </a>
                 </p>
                 <p className="break-all">
