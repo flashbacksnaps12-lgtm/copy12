@@ -2,12 +2,14 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-4 md:py-8 lg:py-12 bg-white border-b-2 border-[#1A1A1A]">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-stretch">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
           {/* Left - Image */}
-          <div className="h-full">
-            <div className="w-full h-full bg-gradient-to-br from-[#FBBF24] to-[#F59E0B] rounded-lg border-2 border-[#1A1A1A] flex items-center justify-center">
-              <span className="text-3xl md:text-4xl">🏔️</span>
-            </div>
+          <div className="flex items-center justify-center h-auto md:h-auto">
+            <img 
+              src="/images/rahdanni-bus.png" 
+              alt="Rahdanni Travels Bus" 
+              className="w-full h-auto max-h-64 md:max-h-72 object-contain"
+            />
           </div>
 
           {/* Right Content */}
