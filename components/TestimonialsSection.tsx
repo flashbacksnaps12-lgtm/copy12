@@ -1,21 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const testimonials = [
   {
     id: 1,
-    name: 'Rajesh Kumar',
-    location: 'Delhi, India',
+    name: 'Rahul Khatri',
+    location: 'Kathua',
     rating: 5,
-    review: 'Excellent service! The team at Rajdani Travels made our Kashmir trip absolutely unforgettable. Every detail was taken care of perfectly.',
+    review: 'Traveling Solo Can Be Stressful, But Rajadni Travels Made It Absolutely Smooth. I Booked A Kashmir Package, And They Handled Everything From Airport Pickup To Daily Sightseeing. The Local Guide Was Very Helpful, And I Felt Safe Throughout The Journey. Super Happy With The Service!',
   },
   {
     id: 2,
-    name: 'Priya Sharma',
-    location: 'Mumbai, India',
+    name: 'Payal Manhas',
+    location: 'Jammu',
     rating: 5,
-    review: 'The journey was so smooth and comfortable. Their staff was incredibly helpful and the transportation was top-notch!',
+    review: 'Rajadni Travels Planned Our Himachal Tour So Beautifully. As A Family With Kids And Elders, We Had Specific Needs—And Everything Was Taken Care Of. The Hotels Were Clean, The Driver Was Very Polite, And The Sightseeing Was Exactly As Promised. It Felt Like A Personal Trip, Not A Commercial Package. Thank You, Team!',
   },
   {
     id: 3,
@@ -43,6 +43,14 @@ export default function TestimonialsSection() {
   const prev = () => {
     setCurrent((current - 1 + testimonials.length) % testimonials.length);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="py-8 md:py-16 lg:py-24 bg-[#FFF8F0] border-b-2 border-[#1A1A1A]">
