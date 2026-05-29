@@ -8,7 +8,7 @@ export default function AboutSection() {
             <img 
               src="/images/rahdanni-bus.png" 
               alt="Rahdanni Travels Bus" 
-              className="w-full h-auto object-contain md:scale-90 md:origin-center"
+              className="w-full h-auto max-h-64 sm:max-h-72 md:max-h-none object-contain md:scale-90 md:origin-center"
             />
           </div>
 
