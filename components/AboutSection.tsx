@@ -4,7 +4,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left - Image */}
-          <div className="hidden md:block">
+          <div>
             <div className="w-full aspect-square bg-gradient-to-br from-[#FBBF24] to-[#F59E0B] rounded-lg border-2 border-[#1A1A1A] flex items-center justify-center">
               <span className="text-4xl md:text-5xl">🏔️</span>
             </div>
