@@ -1,23 +1,23 @@
 export default function AboutSection() {
   return (
-    <section id="about" className="py-8 md:py-16 lg:py-24 bg-white border-b-2 border-[#1A1A1A]">
+    <section id="about" className="py-4 md:py-8 lg:py-12 bg-white border-b-2 border-[#1A1A1A]">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-stretch">
           {/* Left - Image */}
-          <div>
-            <div className="w-full aspect-square bg-gradient-to-br from-[#FBBF24] to-[#F59E0B] rounded-lg border-2 border-[#1A1A1A] flex items-center justify-center">
-              <span className="text-4xl md:text-5xl">🏔️</span>
+          <div className="h-full">
+            <div className="w-full h-full bg-gradient-to-br from-[#FBBF24] to-[#F59E0B] rounded-lg border-2 border-[#1A1A1A] flex items-center justify-center">
+              <span className="text-3xl md:text-4xl">🏔️</span>
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="space-y-4 md:space-y-6">
-            <p className="text-[#FBBF24] font-bold text-sm md:text-base lg:text-lg">Where to Next? Let&apos;s find out together.</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1A1A1A] leading-tight text-balance">
+          <div className="space-y-2 md:space-y-3 flex flex-col justify-center">
+            <p className="text-[#FBBF24] font-bold text-xs md:text-sm">Where to Next? Let&apos;s find out together.</p>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight text-balance">
               Explore the World with Rajdani Travels
             </h1>
 
-            <div className="space-y-3 md:space-y-4 text-sm sm:text-base md:text-lg text-[#666666] leading-relaxed">
+            <div className="space-y-1.5 md:space-y-2 text-xs sm:text-sm md:text-base text-[#666666] leading-relaxed">
               <p>
                 At <strong className="text-[#1A1A1A]">Rajdhani Travel</strong>, we specialize in crafting <strong className="text-[#1A1A1A]">Customized Travel Experiences</strong> that fulfill the unique dreams and desires of our valued clients.
               </p>
